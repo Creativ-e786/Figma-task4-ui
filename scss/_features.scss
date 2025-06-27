@@ -1,0 +1,118 @@
+.features-section {
+  padding: 4rem 6rem;
+
+  .feature-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-bottom: 6rem;
+
+    &.top {
+      align-items: center;
+
+      .left .card {
+        background: #fff;
+        padding: 2rem;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+        border-radius: 1rem;
+
+        .stat {
+          margin-bottom: 1.5rem;
+
+          h2 {
+            font-size: 2rem;
+            color: #1F1534;
+          }
+
+          p {
+            font-size: 1rem;
+            color: #7D7987;
+          }
+
+          &.green h2 {
+            color: #00B67A;
+          }
+        }
+      }
+
+      .right {
+        h2 {
+          font-size: 2.2rem;
+          color: #1F1534;
+
+          .highlight {
+            font-weight: bold;
+          }
+        }
+
+        p {
+          color: #7D7987;
+          margin: 1rem 0 2rem;
+        }
+
+        .features-list {
+          list-style: none;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 0.75rem;
+
+          li {
+            font-size: 1rem;
+            color: #1F1534;
+          }
+        }
+      }
+    }
+
+    &.bottom {
+      .left {
+        h2 {
+          font-size: 2.2rem;
+          color: #1F1534;
+          margin-bottom: 2rem;
+        }
+
+        .text-group {
+          margin-bottom: 1.5rem;
+
+          h4 {
+            font-size: 1rem;
+            color: #1F1534;
+          }
+
+          p {
+            font-size: 0.95rem;
+            color: #7D7987;
+          }
+        }
+      }
+
+      .right.user-grid {
+        position: relative;
+        width: 100%;
+        max-width: 360px;
+
+        .main-img img {
+          width: 100%;
+          border-radius: 1rem;
+        }
+
+        .avatar {
+          position: absolute;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 2px solid #fff;
+
+          &.avatar-1 { top: -20px; left: -20px; }
+          &.avatar-2 { top: 10px; right: -20px; }
+          &.avatar-3 { bottom: -20px; left: 20px; }
+          &.avatar-4 { bottom: -30px; right: 40px; }
+          &.avatar-5 { top: 50%; left: -25px; transform: translateY(-50%); }
+          &.avatar-6 { top: 50%; right: -25px; transform: translateY(-50%); }
+        }
+      }
+    }
+  }
+}

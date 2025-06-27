@@ -1,0 +1,235 @@
+
+.navbar {
+  padding: 2rem 30rem;
+  background-color: #f9fbfd;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #1F1534; /* $text-dark */
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+  color: #458FF6; /* $primary-color */
+}
+
+.navbar nav .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #1F1534; /* $text-dark */
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 6rem;
+}
+
+.hero .hero-text {
+  flex: 1;
+}
+
+.hero .hero-text h1 {
+  font-size: 3rem;
+  color: #1F1534; /* $text-dark */
+}
+
+.hero .hero-text h1 .highlight {
+  color: #458FF6; /* $primary-color */
+}
+
+.hero .hero-text p {
+  margin: 1rem 0 2rem;
+  color: #7D7987; /* $text-light */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.hero .hero-text .buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero .hero-text .buttons .btn-primary {
+  background: #458FF6; /* $primary-color */
+  color: #fff; /* $text-white */
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(69, 143, 246, 0.3);
+  cursor: pointer;
+}
+
+.hero .hero-text .buttons .btn-secondary {
+  background: #fff;
+  color: #1F1534; /* $text-dark */
+  padding: 0.8rem 1.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero .hero-image {
+  flex: 1;
+}
+
+.hero .hero-image img {
+  max-width: 100%;
+}
+.features-section {
+  padding: 4rem 6rem;
+}
+
+.features-section .feature-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-bottom: 6rem;
+}
+
+.features-section .feature-row.top {
+  align-items: center;
+}
+
+.features-section .feature-row.top .left .card {
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  border-radius: 1rem;
+}
+
+.features-section .feature-row.top .left .card .stat {
+  margin-bottom: 1.5rem;
+}
+
+.features-section .feature-row.top .left .card .stat h2 {
+  font-size: 2rem;
+  color: #1F1534;
+}
+
+.features-section .feature-row.top .left .card .stat p {
+  font-size: 1rem;
+  color: #7D7987;
+}
+
+.features-section .feature-row.top .left .card .stat.green h2 {
+  color: #00B67A;
+}
+
+.features-section .feature-row.top .right h2 {
+  font-size: 2.2rem;
+  color: #1F1534;
+}
+
+.features-section .feature-row.top .right h2 .highlight {
+  font-weight: bold;
+}
+
+.features-section .feature-row.top .right p {
+  color: #7D7987;
+  margin: 1rem 0 2rem;
+}
+
+.features-section .feature-row.top .right .features-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.features-section .feature-row.top .right .features-list li {
+  font-size: 1rem;
+  color: #1F1534;
+}
+
+.features-section .feature-row.bottom .left h2 {
+  font-size: 2.2rem;
+  color: #1F1534;
+  margin-bottom: 2rem;
+}
+
+.features-section .feature-row.bottom .left .text-group {
+  margin-bottom: 1.5rem;
+}
+
+.features-section .feature-row.bottom .left .text-group h4 {
+  font-size: 1rem;
+  color: #1F1534;
+}
+
+.features-section .feature-row.bottom .left .text-group p {
+  font-size: 0.95rem;
+  color: #7D7987;
+}
+
+.features-section .feature-row.bottom .right.user-grid {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+}
+
+.features-section .feature-row.bottom .right.user-grid .main-img img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.features-section .feature-row.bottom .right.user-grid .avatar {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.features-section .feature-row.bottom .right.user-grid .avatar.avatar-1 {
+  top: -20px;
+  left: -20px;
+}
+
+.features-section .feature-row.bottom .right.user-grid .avatar.avatar-2 {
+  top: 10px;
+  right: -20px;
+}
+
+.features-section .feature-row.bottom .right.user-grid .avatar.avatar-3 {
+  bottom: -20px;
+  left: 20px;
+}
+
+.features-section .feature-row.bottom .right.user-grid .avatar.avatar-4 {
+  bottom: -30px;
+  right: 40px;
+}
+
+.features-section .feature-row.bottom .right.user-grid .avatar.avatar-5 {
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
+}
+
+.features-section .feature-row.bottom .right.user-grid .avatar.avatar-6 {
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+}
