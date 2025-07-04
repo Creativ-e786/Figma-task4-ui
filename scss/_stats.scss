@@ -1,0 +1,159 @@
+$primary-color: #F7FAFC;
+$secondary-color: #2D3748;
+$highlight-color: #F6AD55;
+$card-bg: #FFFFFF;
+$card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+.container {
+  display: flex;
+  background: $primary-color;
+  min-height: 100vh;
+  padding: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .stats-card {
+    background: $card-bg;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: $card-shadow;
+    width: 250px;
+    text-align: center;
+
+    p {
+      margin: 15px 0;
+      color: $secondary-color;
+
+      .amount {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2B6CB0;
+        display: block;
+      }
+    }
+  }
+}
+
+.right-section {
+  flex: 2;
+  padding-left: 40px;
+
+  .efficiency-section {
+    margin-bottom: 40px;
+
+    h1 {
+      font-size: 36px;
+      color: $secondary-color;
+      margin-bottom: 20px;
+
+      .highlight {
+        color: $highlight-color;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      color: $secondary-color;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 16px;
+        color: $secondary-color;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 25px;
+
+        .check-mark {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 15px;
+          height: 15px;
+          background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="%23F6AD55"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1.5-4.5l5-5-1.414-1.414L8.5 10.586 6.914 8.999 5.5 10.414l3 3z" clip-rule="evenodd"/></svg>') no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+  }
+
+  .advisors-section {
+    h1 {
+      font-size: 36px;
+      color: $secondary-color;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: $secondary-color;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      max-width: 500px;
+
+      strong {
+        color: $secondary-color;
+      }
+    }
+
+    .image-container {
+      position: relative;
+      text-align: center;
+
+      .central-image {
+        width: 200px;
+        height: 250px;
+        border-radius: 15px;
+        background: #FBD38D;
+        position: relative;
+        z-index: 1;
+      }
+
+      .profile-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 15px;
+        position: absolute;
+        background: $card-bg;
+        box-shadow: $card-shadow;
+
+        &:nth-child(2) { top: -40px; left: 50px; }
+        &:nth-child(3) { top: 30px; left: 20px; }
+        &:nth-child(4) { top: 130px; left: -20px; }
+        &:nth-child(5) { top: 180px; left: 80px; }
+        &:nth-child(6) { top: 100px; right: 20px; }
+        &:nth-child(7) { top: 50px; right: -20px; }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left-section,
+  .right-section {
+    padding: 0;
+    width: 100%;
+  }
+
+  .right-section {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+}
